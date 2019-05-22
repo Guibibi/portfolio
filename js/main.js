@@ -6,3 +6,8 @@ $(".navbar a").click(function() {
     1000
   );
 });
+
+function jumpToContact() {
+  var element = document.getElementById("contact");
+  element.scrollIntoView();
+}
