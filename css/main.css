@@ -6,6 +6,7 @@ body {
 }
 
 html,
+p,
 h1,
 h2,
 h3,
@@ -137,10 +138,18 @@ a {
   margin: 2em;
 }
 
+.portfolio p {
+  color: #00c1c4;
+}
+
 .portfolio img {
   height: 15rem;
   width: 100%;
   margin: 1em;
+}
+
+.portfolio img:hover {
+  cursor: pointer;
 }
 
 /*Contact*/
@@ -151,7 +160,7 @@ a {
 
 .contact-form h1 {
   padding: 2em 1px;
-  color: #f97300;
+  color: #5fc400;
 }
 
 .contact-form .right {
@@ -159,7 +168,7 @@ a {
 }
 
 .contact-form .right .btn-secondary {
-  background: #f97300;
+  background: #5fc400;
   color: #fff;
   border: 0;
 }
