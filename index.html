@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guillaume Bedard</title>
+    <!-- add bootstrap css file -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <a class="navbar-brand" href="#">Accueil</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-4">
+          <li class="nav-item">
+            <a class="nav-link" data-value="about" href="#">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="contact" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="header ">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="description ">
+          <h1>
+            Guillaume Bedard
+            <p>
+              Développeur Front-End Web
+            </p>
+            <button class="btn btn-outline-secondary btn-lg">
+              Me contacter
+            </button>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <!--  section a propos -->
+    <div class="about" id="about">
+      <div class="container">
+        <h1 class="text-center">A propos</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/profile.png" class="img-fluid" />
+            <span class="text-justify">Développeur Front-End Web</span>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 desc">
+            <h3>Guillaume Bedard</h3>
+            <p>
+              Je suit un jeune développeur, qui est passionné par l'informatique
+              depuis un très jeune âge. Mon but est de fournir un produit de
+              qualité en respectant les demandes de mes clients. Mes compétences
+              sont principalement: HTML5, CSS, Javascript, Python, PHP et
+              Bootstrap. Je suis une personne qui est travaillant, minutieux
+              dans les détails, sociable et qui peut gérer son stress. Au
+              plaisir de travailler avec vous.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio" id="portfolio">
+      <h1 class="text-center">Portfolio</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/bgs.PNG" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/google.png" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/roast.png" class="img-fluid" />
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="https://via.placeholder.com/200" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/portfolio/port11.png" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/portfolio/electric.png" class="img-fluid" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/portfolio/Classic.jpg" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/portfolio/port1.png" class="img-fluid" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/portfolio/port8.png" class="img-fluid" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h1>Me contacter</h1>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 right">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Votre nom"
+                  name=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="example@gmail.com"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control form-control-lg"> </textarea>
+              </div>
+              <input
+                type="submit"
+                class="btn btn-secondary btn-block"
+                value="Envoyer"
+                name=""
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- add Javasscript file from js file -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
