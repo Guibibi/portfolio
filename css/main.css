@@ -133,6 +133,12 @@ a {
   position: relative;
 }
 
+.portfolio .btn-primary {
+  background: #5fc400;
+  color: #fff;
+  border: 0;
+}
+
 .portfolio h1 {
   color: #5fc400;
   margin: 2em;

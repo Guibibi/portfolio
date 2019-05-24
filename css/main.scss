@@ -121,6 +121,13 @@ a {
   margin: 4em 0;
   position: relative;
 }
+
+.portfolio .btn-primary {
+  background: $primary;
+  color: #fff;
+  border: 0;
+}
+
 .portfolio h1 {
   color: $primary;
   margin: 2em;
