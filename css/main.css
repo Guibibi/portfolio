@@ -2,7 +2,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f4f4f4;
+  background: #f0f0f0;
 }
 
 html,
@@ -19,7 +19,7 @@ a {
 }
 
 .navbar {
-  background: #5fc400;
+  background: #7ebad2;
 }
 
 .nav-link,
@@ -34,7 +34,7 @@ a {
 
 .nav-link:hover {
   background: #f4f4f4;
-  color: #5fc400;
+  color: #7ebad2;
 }
 
 .navbar-collapse {
@@ -73,7 +73,7 @@ a {
 }
 
 .description h1 {
-  color: #5fc400;
+  color: #7ebad2;
 }
 
 .description p {
@@ -84,8 +84,8 @@ a {
 }
 
 .description button {
-  border: 1px solid #5fc400;
-  background: #5fc400;
+  border: 1px solid #7ebad2;
+  background: #7ebad2;
   color: #fff;
 }
 
@@ -96,7 +96,7 @@ a {
 }
 
 .about h1 {
-  color: #5fc400;
+  color: #7ebad2;
   margin: 2em;
 }
 
@@ -135,24 +135,18 @@ a {
 }
 
 .portfolio .btn-primary {
-  background: #5fc400;
+  background: #7ebad2;
   color: #fff;
   border: 0;
 }
 
 .portfolio h1 {
-  color: #5fc400;
+  color: #7ebad2;
   margin: 2em;
 }
 
 .portfolio p {
   color: #00c1c4;
-}
-
-.portfolio img {
-  height: 15rem;
-  width: 100%;
-  margin: 1em;
 }
 
 .portfolio img:hover {
@@ -167,7 +161,7 @@ a {
 
 .contact-form h1 {
   padding: 2em 1px;
-  color: #5fc400;
+  color: #7ebad2;
 }
 
 .contact-form .right {
@@ -175,7 +169,7 @@ a {
 }
 
 .contact-form .right .btn-secondary {
-  background: #5fc400;
+  background: #7ebad2;
   color: #fff;
   border: 0;
 }

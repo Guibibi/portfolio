@@ -6,6 +6,7 @@
     <!-- add bootstrap css file -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -42,9 +43,9 @@
     <header class="header ">
       <div class="overlay"></div>
       <div class="container">
-        <div class="description ">
+        <div class="description" data-aos="fade-right" data-aos-duration="3000">
           <h1>
-            Guillaume Bedard
+            Guillaume Bédard
             <p>
               Développeur Front-End Web
             </p>
@@ -65,12 +66,18 @@
         <h1 class="text-center">A propos</h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/profile.webp" class="img-fluid" />
-            <span class="text-justify">Développeur Front-End Web</span>
+            <img
+              src="assets/profile.webp"
+              class="img-fluid"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            />
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <h3>Guillaume Bedard</h3>
-            <p>
+            <h3 data-aos="fade-down" data-aos-duration="2000">
+              Guillaume Bedard
+            </h3>
+            <p data-aos="fade-left" data-aos-duration="2000">
               Je suis un jeune développeur, qui est passionné par l'informatique
               depuis un très jeune âge. Mon but est de fournir un produit de
               qualité en respectant les demandes de mes clients. Mes compétences
@@ -88,74 +95,59 @@
     <div class="portfolio" id="portfolio">
       <h1 class="text-center">Portfolio</h1>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 20rem;">
-              <img
-                class="card-img-top mx-auto px-2 img-fluid"
-                src="assets/bgs.webp"
-                alt="Card image cap"
-              />
+        <div class="card-deck">
+          <!---Card 1-->
+          <div class="card" style="width: 350px;">
+            <img
+              class="card-img-top img-responsive"
+              src="/assets/port1.png"
+              alt=""
+            />
+            <div class="card-body">
+              <card-title>Le Grunjie</card-title>
+              <p>
+                Site web créer pour un client qui avais besoin d'un e-commerce
+                pour sa compagnie. CMS Wordpress.
+              </p>
               <div class="card-body">
-                <h5 class="card-title">BGS Beaute</h5>
-                <p class="card-text">
-                  Site web concu en HTML et CSS pure sans aucun framework.
-                </p>
-                <a
-                  href="https://bgsbeaute.netlify.com/"
-                  target="_blank"
-                  class="btn btn-primary"
-                  rel="noopener"
-                  >Visiter</a
-                >
+                <button class="btn-primary">Visiter</button>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 20rem;">
-              <img
-                class="card-img-top mx-auto px-2 img-fluid"
-                src="assets/google.webp"
-                alt="Card image cap"
-              />
+          <!---Card 2-->
+          <div class="card" style="width: 350px;">
+            <img
+              class="card-img-top img-fluid"
+              src="https://camo.githubusercontent.com/29bf447f263d699056fae8bcf22ca546957450c8/68747470733a2f2f692e696d6775722e636f6d2f386943544d336a2e706e67"
+              alt=""
+            />
+            <div class="card-body">
+              <card-title>Code Radio</card-title>
+              <p>
+                Application pour ordinateur fait avec Electron. Elle permet
+                d'écouter la radio CodeRadio de FreeCodeCamp sans a avoir a
+                ouvrir le navigateur.
+              </p>
               <div class="card-body">
-                <h5 class="card-title">Google</h5>
-                <p class="card-text">
-                  Exercise de récréation du site web de google en CSS et HTML
-                  pure
-                </p>
-                <a
-                  href="https://mystifying-almeida-5ed670.netlify.com/"
-                  target="_blank"
-                  class="btn btn-primary"
-                  rel="noopener"
-                  >Visiter</a
-                >
+                <button class="btn-primary">Visiter</button>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="width: 20rem;">
-              <img
-                class="card-img-top mx-auto px-2 img-fluid"
-                src="assets/roast.webp"
-                alt="Card image cap"
-              />
+          <!---Card 3-->
+          <div class="card" style="width: 350px;">
+            <img
+              class="card-img-top img-responsive"
+              src="/assets/port3.png"
+              alt=""
+            />
+            <div class="card-body">
+              <card-title>Le Grunjie</card-title>
+              <p>
+                Petit jeux ou qu'il faut trouver le robot sans ouvrir toutes les
+                portes. Fait en HTML, CSS et Javascript.
+              </p>
               <div class="card-body">
-                <h5 class="card-title">Comparateur de jeu</h5>
-                <p class="card-text">
-                  Site web conçu avec un backend de Django, qui utilise
-                  Beautiful soup 4 pour prendre le nombre de joueurs courants.
-                </p>
-                <a
-                  href="https://guibibitest.herokuapp.com/roast/"
-                  target="_blank"
-                  class="btn btn-primary"
-                  rel="noopener"
-                  >Visiter</a
-                >
+                <button class="btn-primary">Visiter</button>
               </div>
             </div>
           </div>
@@ -184,12 +176,16 @@
                 <input
                   type="email"
                   class="form-control form-control-lg"
-                  placeholder="example@gmail.com"
+                  placeholder="Adresse email"
                   name="email"
                 />
               </div>
               <div class="form-group">
-                <textarea name="message" class="form-control form-control-lg">
+                <textarea
+                  name="message"
+                  placeholder="Entrez votre message ici."
+                  class="form-control form-control-lg"
+                >
                 </textarea>
               </div>
               <input
@@ -203,9 +199,13 @@
         </form>
       </div>
     </div>
-    <!-- add Javasscript file from js file -->
+    <!-- add Javascript file from js file -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

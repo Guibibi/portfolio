@@ -1,4 +1,4 @@
-$primary: #5fc400;
+$primary: rgb(126, 186, 210);
 $accent: #00c403;
 $accent1: #00c465;
 $text1: #00c1c4;
@@ -10,7 +10,7 @@ $text3: #0300c4;
 body {
   padding: 0;
   margin: 0;
-  background: #f4f4f4;
+  background: rgba(240, 240, 240, 1);
 }
 html,
 p,
@@ -138,10 +138,6 @@ a {
   color: $text1;
 }
 .portfolio img {
-  height: 15rem;
-  width: 100%;
-  margin: 1em;
-
   &:hover {
     cursor: pointer;
   }
